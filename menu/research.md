@@ -41,7 +41,7 @@ Modern data science and machine learning present new challenges that calls for r
 
 # Selected Talks
 
-1. **Selective Inference for Time-Varying Moderated Effects** [*(slides)*](/assets/file/SIMRTSlides.pdf)  
+1. **Selective Inference for Time-Varying Moderated Effects** [*(slides)*](https://www.github.com/BakshiSoham/homepage/assets/file/SIMRTSlides.pdf)  
    *Statistical Analysis of Multi-Outcome Data (SAM) 2024, Salzburg, Austria*
    
 2. **Non-Identifiability of Bayes Classifier** [*(slides)*](/assets/file/slides_jsm.pdf)  
