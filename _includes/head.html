@@ -1,0 +1,60 @@
+<head>
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.title }} | {{ site.description }}
+    {% else %}
+      {{ page.title }} | {{ site.title }}
+    {% endif %}
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="{{ site.github.url }}/assets/css/main.css">
+  <link rel="stylesheet" href="{{ site.github.url }}/assets/css/syntax.css">
+  <!-- Use Atom -->
+  {% feed_meta %}
+  <!-- Use RSS-2.0 -->
+  <!--<link href="{{ site.github.url }}/rss-feed.xml" type="application/rss+xml" rel="alternate" title="{{ site.title }} | {{ site.description }}"/>
+  //-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
+<!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+    MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      });
+    
+    const toggle = document.getElementById('toggle');
+    const body = document.body;
+
+    const elements = document.querySelectorAll('a, h1, h2, h3, h4, h5, h6, blockquote');
+    
+    elements.forEach(el => {
+      el.classList.add('light');
+    });
+
+
+    body.classList.add('light');
+
+    toggle.addEventListener('click', () => {
+        if (body.classList.contains('light')) {
+            body.classList.replace('light', 'dark');
+            elements.forEach(el => {
+              el.classList.replace('light', 'dark');
+            });
+        } else {
+            body.classList.replace('dark', 'light');
+            elements.forEach(el => {
+              el.classList.replace('dark', 'light');
+            });
+        }
+    });
+  </script>
+  <!-- Google Analytics -->
+  {% include google-analytics.html %}
+  <!-- Use Jekyll SEO plugin -->
+  {% seo %}
+</head>
