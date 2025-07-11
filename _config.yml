@@ -10,6 +10,9 @@
 #   sort_field: 'date'
 #   sort_reverse: true
 
+baseurl: "/BakSo" # /homepage
+url: ""
+
 # jekyll-paginate configuration
 paginate:            5
 
@@ -20,9 +23,9 @@ permalink:           /:title
 plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           'Lagrange'
-description:	       'a minimalist Jekyll theme'
-author:              'Paul Le'
+title:		           'Soham Bakshi'
+description:	       ''
+author:              'Soham Bakshi'
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 #feed:
