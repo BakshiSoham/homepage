@@ -1,4 +1,4 @@
-[My GitHub Page](bakshisoham.github.io/homepage/)
+[My GitHub Page](https://bakshisoham.github.io/homepage/)
 
 ## Table of Contents
 
